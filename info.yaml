@@ -16,12 +16,10 @@ project:
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
-    - "config.json"
     - "tt_um_vga_glyph_mode.v"
     - "palette_rom.v"
     - "glyphs_rom.v"
     - "hvsync_generator.v"
-    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -46,14 +44,14 @@ pinout:
   uo[7]: "HSync"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
+  uio[0]: "Palette 0"
+  uio[1]: "Palette 1"
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[6]: "VGA Mode bit 0"
+  uio[7]: "VGA Mode bit 1"
 
 # Do not change!
 yaml_version: 6

@@ -46,7 +46,8 @@ module glyphs_rom(
             34: case(y) 2:rb=8'hFF; 3:rb=8'h06; 4:rb=8'h0C; 5:rb=8'h18; 6,7,8,9,10:rb=8'h18; default:rb=0; endcase // 7
             35: case(y) 2,6,10:rb=8'h7E; 3,4,5,7,8,9:rb=8'h66; default:rb=0; endcase // 8
             36: case(y) 2,6,10:rb=8'h7E; 3,4,5:rb=8'h66; 7,8,9:rb=8'h06; default:rb=0; endcase // 9*/
-            37: rb = 8'h00; // TRAILING SPACE
+            //37: rb = 8'h00; // TRAILING SPACE
+            3: rb = 8'h00; // TRAILING SPACE
             default: rb = 8'h00; 
         endcase
         pixel = rb[7-x];
